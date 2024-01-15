@@ -7,10 +7,15 @@
   --color-white: hsl(0, 0%, 100%);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--color-very-dark-blue-main);
-
   margin: 0;
+  padding: 0;
+
   font-size: 18px;
   font-family: "Outfit", sans-serif;
 }
@@ -46,7 +51,7 @@ span {
   background-color: var(--color-very-dark-blue-card);
   border-radius: 15px;
   padding: 1em;
-  margin: 10em;
+  margin: 5em 0;
   box-shadow: 0.5em 4em 4em hsla(246, 76%, 5%, 0.5);
   max-width: 350px;
 }
