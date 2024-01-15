@@ -1,0 +1,120 @@
+:root {
+  --color-soft-blue: hsl(215, 51%, 70%);
+  --color-cyan: hsl(178, 100%, 50%);
+  --color-very-dark-blue-main: hsl(217, 54%, 11%);
+  --color-very-dark-blue-card: hsl(216, 50%, 16%);
+  --color-very-dark-blue-line: hsl(215, 32%, 27%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--color-very-dark-blue-main);
+
+  margin: 0;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+h2 {
+  font-weight: 400;
+  color: var(--color-cyan);
+}
+
+p {
+  font-weight: 300;
+  color: var(--color-soft-blue);
+}
+
+span {
+  color: var(--color-white);
+}
+
+.card {
+  background-color: var(--color-very-dark-blue-card);
+  border-radius: 15px;
+  padding: 1em;
+  margin: 10em;
+  box-shadow: 0.5em 4em 4em hsla(246, 76%, 5%, 0.5);
+  max-width: 350px;
+}
+
+.nft-image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.zone-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ethereum {
+  font-size: 11px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.time-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 1em;
+}
+
+.icons {
+  margin-right: 0.5em;
+}
+
+.creation {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+
+.avatar {
+  width: 2em;
+  border: solid white 1px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 375px) {
+  body,
+  main {
+    padding: 0;
+    margin: 0;
+  }
+
+  .card {
+    margin: 4em 1em;
+    padding: 1em;
+    box-shadow: 0.25em 2em 2em hsla(246, 76%, 5%, 0.5);
+  }
+}
+
+.attribution {
+  color: var(--color-white);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
